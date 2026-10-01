@@ -57,7 +57,7 @@ body{
 
 .hero{
     height:100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0,0.5)),url('https://www.google.com/search?q=restaurant+dinig+images&sca_esv=bfbbb328790af9c1&rlz=1C9BKJA_enIN1172IN1172&hl=en-GB&udm=2&biw=1180&bih=682&sxsrf=APpeQnv6zBj1Gpdq3ws0VKbh7mdssXi6Ng%3A1790831272762&ei=qOq9ataVLqWYhvcPxcSf2Ac&oq=restaurant+dinig+images&gs_lp=EhJtb2JpbGUtZ3dzLXdpei1pbWciF3Jlc3RhdXJhbnQgZGluaWcgaW1hZ2VzMgcQABiABBgNMggQABgIGB4YDTIIEAAYCBgeGA0yCBAAGAgYHhgNMggQABgIGB4YDUj9RlDCL1jORXAAeACQAQGYAaEBoAHnDaoBBDMuMTO4AQPIAQD4AQGYAg-gAtYMwgIHECMYyQIYJ8ICCBAAGIkFGKIEwgIIEAAYgAQYogTCAggQABiABBixA8ICBRAAGIAEwgIGEAAYHhgNmAMAiAYBkgcEMy4xMqAHlTmyBwQzLjEyuAfWDMIHBjMuMTEuMcgHEIAIAQ&sclient=mobile-gws-wiz-img#sv=CAMSVxoyKhBlLXVRdnRvM0g2WEhwNEtNMg51UXZ0bzNINlhIcDRLTToOb1hseDFMek5sUWo0YU0gBCoXCgFzEhBlLXVRdnRvM0g2WEhwNEtNGAEwAUoECAEQAhgHIKjCydEFSggQAhgBIAIoAQ') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0,0.5)),url('./Images/IMG_0130.jpeg') center/cover;
     margin-top: 80px;
     display: flex;
     align-items: center;
