@@ -57,11 +57,53 @@ body{
 
 .hero{
     height:100vh;
-    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0,0.5)),url('./Images/IMG_0130.jpeg') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('Images/IMG_0130.jpeg') center/cover;
     margin-top: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color:white;
+}
+.hero-content h2{
+    font-size: 3.5em;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.hero-content p{
+    font-size: 1.2em;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+.hero-button{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.btn{
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+.btn-primary{
+    background-color: #e74c3c;
+    color:white;
+}
+.btn-primary:hover{
+    background-color: #c0392b;
+    transform: translateY(-3px);
+}
+.btn-secondary{
+    background-color: transparent;
+    color:white;
+    border: 2px solid white;
+}
+.btn-secondary:hover{
+    background-color: white;
+    color:#2c3e50;
+    transform: translateY(-3px);
 }
