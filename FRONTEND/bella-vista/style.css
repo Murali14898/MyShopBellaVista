@@ -244,3 +244,118 @@ body{
     border-color: #e74c3c;
     outline:none;
 }
+
+/*CSS custom property and Responsive web design*/
+:root{
+    --primary-color: #e74c3c;
+    --secondary-color: #2c3e50;
+    --accent-color: #3498db;
+    --light-bg: #f8f9fa;
+    --dark-text: #333;
+    --light-text: #666;
+    --border-radius: 8px;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+.btn-primary{
+    background-color: var(--primary-color);
+    color:white;
+    transition: var(--transition);
+}
+.section-title{
+    color: var(--secondary-color);
+}
+.menu-item{
+    background-color: white;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+@media (max-width: 768px){
+    .hero-content h2{
+        font-size: 2.5rem;
+    }
+    .hero-button{
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn{
+        width: 80%;
+        text-align: center;
+    }
+    .about-content,.contact-content{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .nav-links{
+        gap: 1rem;
+    }
+}
+/* Mobile Styles */
+@media (max-width: 480px){
+    .hero-content h2{
+        font-size: 2rem;
+    }
+    .container{
+        padding: 0 15px;
+    }
+    .nav-links{
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/*adding animation to the hero section*/
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes slideInleft{
+    from{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.hero-content{
+    animation: fadeIn 1s ease-out ;
+}
+.menu-item{
+    animation: slideInleft 0.6s ease-out;
+    animation-fill-mode: both;
+}
+.menuitem:nth-child(1){
+    animation-delay: 0.1s;
+}
+.menuitem:nth-child(2){
+    animation-delay: 0.2s;
+}
+.menuitem:nth-child(3){
+    animation-delay: 0.3s;
+}
+.about-image{
+    animation: fadeIn 1s ease-out 0.3s both;
+}
+.section-title{
+    opacity: 0;
+    transform: translateY(20px);
+    transition:all 0.6s ease;
+}
+.section-title.animate{
+    opacity: 1;
+    transform: translateY(0);
+}
